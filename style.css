@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: url(images/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.logo {
+    width: 100px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.register-btn {
+    border-radius: 20px 0 20px 20px;
+    padding: 10px 20px;
+    background: linear-gradient(to right, red, blue);
+    text-decoration: none;
+    color: #fff;
+    transition: .5s ease;
+    display: inline-block;
+}
+
+.login-btn {
+    color: #000;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.register-btn:hover {
+    border-radius: 20px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+
+}
+
+.hero-img img {
+    width: 100%;
+    border-radius: 10px;
+    animation-delay: 1.3s;
+}
+
+.hero-details h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    
+}
+
+.hero-details p {
+    margin-bottom: 10px;
+    animation-delay: 0.5s;
+}
+
+.hero-details .register-btn {
+    padding: 10px 50px;
+    animation-delay: 0.8s;
+}
+
+.anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+}
